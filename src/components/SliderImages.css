@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.carousel {
+  width: 900px;
+  height: 500px;
+  margin: auto;
+}
+@media (max-width: 900px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+}
+.carousel img {
+  display: block;
+  object-fit: cover;
+  width: 100% !important;
+  height: 100%;
+  max-width: 100%;
+}
