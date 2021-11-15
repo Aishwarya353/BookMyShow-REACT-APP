@@ -14,7 +14,9 @@ function SingleMovieFetch() {
   const [singledata, setSingleData] = useState([]);
   useEffect(async () => {
     try {
-      const response = await axios.get(`//localhost:5000/movie/${movid}`);
+      const response = await axios.get(
+        `//bookms-backend.herokuapp.com/movie/${movid}`
+      );
       console.log(response);
       setSingleData([response.data]);
       //converting object to array

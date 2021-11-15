@@ -23,7 +23,7 @@ function Registration() {
     };
 
     const response = await axios
-      .post("//localhost:5000/user-register", userDetails)
+      .post("//bookms-backend.herokuapp.com/user-register", userDetails)
       .then((data) => {
         Swal.fire({
           title: "<strong>Submitted!</strong>",

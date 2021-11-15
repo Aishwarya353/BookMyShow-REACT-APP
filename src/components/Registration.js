@@ -26,7 +26,7 @@ function Registration() {
     // userDetails.username = 'nik';
     // console.log(userDetails);
     await axios
-      .post("//localhost:5000/user-register", userDetails)
+      .post("//bookms-backend.herokuapp.com/user-register", userDetails)
       .then((data) => {
         Swal.fire({
           title: `<strong>${data.data.message}</strong>`,

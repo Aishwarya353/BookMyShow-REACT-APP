@@ -10,7 +10,7 @@ function AllMoviesFetch() {
   const [data, setData] = useState([]);
   useEffect(async () => {
     try {
-      const response = await axios.get("//localhost:5000/movies");
+      const response = await axios.get("//bookms-backend.herokuapp.com/movies");
       console.log(response);
       setData(response.data);
     } catch (error) {
@@ -19,7 +19,7 @@ function AllMoviesFetch() {
   }, []);
   //   async function getMovies() {
   //     try {
-  //       const response = await axios.get("https://localhost:5000/movies");
+  //       const response = await axios.get("https://bookms-backend.herokuapp.com/movies");
   //       console.log(response);
   //     } catch (error) {
   //       console.error(error);
